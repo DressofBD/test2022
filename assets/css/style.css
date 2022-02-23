@@ -398,8 +398,12 @@ h4{
   font-size: 20px;
   line-height: 40px;
 }
-
-
+.animatedParent{
+  overflow-x: hidden;
+}
+.of-visible{
+  overflow-x: visible;
+}
 
 
 
@@ -657,4 +661,5 @@ section {
   line-height: 50px;
 }
 }
+
 
