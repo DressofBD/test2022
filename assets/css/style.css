@@ -387,6 +387,17 @@ h4{
   background: #f4f4f4;
   padding: 40px 80px;
 }
+.hideaki-doing-top-desc .sml {
+  font-size: 15px;
+}
+.fig-number {
+  color: #3f9be7;
+  font-size: 40px;
+}
+.hideaki-doing-top-desc ul li {
+  font-size: 20px;
+  line-height: 40px;
+}
 
 
 
