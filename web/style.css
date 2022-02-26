@@ -919,6 +919,10 @@ button.navbar-toggler:focus, button.navbar-toggler:active{
 body{
   font-size: 15px;
 }
+header.fixed .navbar {
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+}
 .top-section-desc h1 {
   font-size: 60px;
   line-height: 65px;
