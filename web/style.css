@@ -324,6 +324,7 @@ header.fixed .navbar-light .navbar-nav .nav-item:last-child .nav-link {
   left: 0;
   max-width: 100%;
   max-height: 100%;
+  cursor: move;
 }
 .top-banner img {
   width: 2000px;
@@ -332,8 +333,6 @@ header.fixed .navbar-light .navbar-nav .nav-item:last-child .nav-link {
   margin-top: -100px;
   position: relative
 }
-
-
 
 
 
