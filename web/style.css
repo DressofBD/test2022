@@ -475,12 +475,12 @@ header.fixed .navbar-light .navbar-nav .nav-item:last-child .nav-link {
 .hover-left-img {
   position: relative;
   min-width: calc(100% + 15px);
-  min-height: 500px;
+  min-height: 609px;
   overflow: hidden;
 }
 .hover-left-img img {
   position: absolute;
-  min-width: 800px;
+  min-width: 960px;
   transition: 0.5s;
   height: auto;
   width: 100%;
@@ -509,7 +509,9 @@ header.fixed .navbar-light .navbar-nav .nav-item:last-child .nav-link {
 .who-Serve-hover:hover .who-We-Serve-bg{
   transform: scale(0.8);
 }
-
+.who-We-Serve-desc-btm{
+  padding-left: 30px;
+}
 
 
 
@@ -589,7 +591,7 @@ header.fixed .navbar-light .navbar-nav .nav-item:last-child .nav-link {
   padding-top: 170px;
 }
 .fixed-Wireless-Access ul {
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto 130px;
   justify-content: space-around;
 }
@@ -603,13 +605,16 @@ header.fixed .navbar-light .navbar-nav .nav-item:last-child .nav-link {
 .fixed-Wireless-Access ul li img {
   width: 120px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 .fixed-Wireless-Access ul li h4 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
 }
 .fixed-Wireless-Access ul li p{
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 18px;
 }
 .fixed-Wireless-Access ul li:hover .default-img{
   display: none;
@@ -849,7 +854,6 @@ footer .container {
   min-width: 95% !important;
 }
 
-
 }
 
 
@@ -859,16 +863,26 @@ footer .container {
 .tab-content-next {
   display: none;
 }
-
-
+.hover-left-img img {
+  min-width: auto;
+}
+.hover-left-img {
+  min-height: 100%;
+}
+.who-We-Serve .hover-left-img {
+  min-height: 35%;
+}
 
 
 }
 
 @media (max-width: 991px){
-.navbar-nav li{
+.navbar-nav {
+  margin-top: 50px;
+}
+.navbar-nav li {
   text-align: center;
-  margin-bottom: 5px;
+  margin: 10px auto;
 }
 .navbar-nav li a{
   text-align: center;
@@ -881,8 +895,6 @@ footer .container {
 }
 .navbar-brand img {
   width: 70px;
-  margin-left: 50px;
-  margin-bottom: 10px;
 }
 header.fixed .logo1{
   display: none !important;
@@ -900,22 +912,36 @@ header.fixed .logo2-m {
 .navbar-light .navbar-toggler-icon {
   background-image: url("assets/images/menu-incon.png");
   background-size: contain;
+  background-position: center;
 }
 header.fixed .navbar-light .navbar-toggler-icon {
   background-image: url("assets/images/menu-incon2.png");
 }
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   background-image: url("assets/images/menu-incon-cross.png");
+  background-size: 20px;
 }
 header.fixed .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   background-image: url("assets/images/menu-incon-cross2.png");
+  background-size: 20px;
 }
 .navbar-light .navbar-toggler {
   border-color: transparent;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 33px;
+}
+header.fixed .navbar-light .navbar-toggler {
+  top: 16px;
 }
 button.navbar-toggler:focus, button.navbar-toggler:active{
   outline: none !important;
   box-shadow: none !important;
+}
+header.fixed .navbar {
+  padding-top: .3rem;
+  padding-bottom: .3rem;
 }
 .remote-Workforce {
   padding-bottom: 50px;
@@ -926,7 +952,7 @@ button.navbar-toggler:focus, button.navbar-toggler:active{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(1, 1, 1, 0.78);
+  background: rgba(1, 1, 1, 0.9);
   top: 0;
   left: 0;
   z-index: 10;
@@ -944,10 +970,6 @@ button.navbar-toggler:focus, button.navbar-toggler:active{
 body{
   font-size: 15px;
 }
-header.fixed .navbar {
-  padding-top: .3rem;
-  padding-bottom: .3rem;
-}
 .top-section-desc h1 {
   font-size: 60px;
   line-height: 65px;
@@ -959,13 +981,20 @@ header.fixed .navbar {
   width: 170px;
   height: 170px;
   position: absolute;
-  bottom: 25%;
+  bottom: 28%;
   z-index: 9;
 }
 .hover-left-img {
   min-height: 400px;
+  min-width: 500px;
   margin-top: 80px;
   margin-left: 60px;
+}
+.fixed-Wireless-Access-img .hover-left-img {
+  min-height: 470px;
+  min-width: 400px;
+  margin-top: 80px;
+  margin-left: 43px;
 }
 .remote-Workforce-img2 {
   display: none;
@@ -976,6 +1005,10 @@ header.fixed .navbar {
 .remote-Workforce-img {
   margin: 80px 0 0;
   height: 200px;
+}
+.remote-Workforce-img img {
+  left: 50%;
+  margin-left: -100px;
 }
 .fixed-Wireless-Access ul {
   max-width: 100%;
@@ -990,13 +1023,16 @@ header.fixed .navbar {
   margin-bottom: 50px;
 }
 .why-webbing-desc {
-  padding: 70px;
+  padding: 170px 70px;
 }
 .why-webbing-desc h4 {
   font-size: 30px;
+  line-height: 42px;
+}
+.who-We-Serve h1 {
+  font-size: 40px;
 }
 .hover-left-img img {
-  min-width: calc(100% + 50px);
   min-height: 400px;
 }
 .innovation ul li img {
@@ -1013,6 +1049,18 @@ header.fixed .navbar {
 }
 .swiper3 {
   max-width: 100%;
+  padding: 80px 15px;
+  background-position: center;
+  background-size: cover;
+}
+.swiper3 h5 {
+  margin-bottom: 10px;
+}
+.swiper3 h1 {
+  margin-bottom: 20px;
+}
+.swiper3 .learn-more {
+  margin-bottom: 25px;
 }
 .swiper3 .swiper-button-prev, .swiper3 .swiper-button-next {
   display: none;
@@ -1042,8 +1090,19 @@ header.fixed .navbar {
 .who-We-Serve, .fixed-Wireless-Access {
   overflow: hidden;
 }
+.who-We-Serve .hover-left-img {
+  min-height: 400px;
+  left: 8%;
+}
 footer > .container{
   width: 85%;
+}
+.who-We-Serve {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.slider1 .swiper-slide img {
+  min-width: 500px;
 }
 
 
@@ -1062,6 +1121,13 @@ footer > .container{
 }
 .swiper2 .swiper-slide {
   padding: 0 20px;
+}
+.hover-left-img {
+  min-height: 400px !important;
+}
+.hover-left-img img {
+  min-height: 400px;
+  height: 400px;
 }
 }
 
