@@ -978,8 +978,8 @@ body{
   display: none;
 }
 .who-We-Serve-bg {
-  left: -50%;
-  min-width: 640px;
+  left: -300px;
+  min-width: 700px;
 }
 .lot a {
   width: 170px;
