@@ -339,6 +339,18 @@ header {
     transform: translateY(-15px);
   }
 }
+.animation3{
+  transform-origin: bottom center;
+  animation: animation3 5s ease-in-out 0s infinite alternate none running;
+}
+@keyframes animation3{
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
 .learn-more {
   font-size: 23px;
   font-weight: 900;
@@ -372,7 +384,7 @@ header {
   background: #282262;
   color: #fff;
   border-radius: 70px;
-  padding: 30px 35px;
+  padding: 30px;
 }
 .map iframe{
   border-radius: 35px;
