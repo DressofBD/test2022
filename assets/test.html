@@ -35,13 +35,20 @@
           opacity: 0;
         }
         30%{
-          opacity: 0.3;
+          opacity: 0.1;
         }
         100%{
           transform: scale(1) translateY(-500%) rotate(360deg);
           opacity: 0;
         }
       }
+
+
+      span:nth-child(n+100) {
+         display: none;
+      }
+
+
     </style>
   </head>
   <body>
@@ -54,30 +61,29 @@
 
 
 <script>
-  
   let color = ['red', 'green', 'blue', 'pink', 'yellow'];
   function square(){
 
-    let section = document.querySelector('section');
-    let square = document.createElement('span');
-    square <= 10;
-    let size = Math.random() * 50;
+   var section = document.querySelector('section');
+   var square = document.createElement('span');
 
-    square.style.width = 30 + size + 'px';
-    square.style.height = 30 + size + 'px';
-    square.style.top = Math.random() * innerHeight + 'px';
-    square.style.left = Math.random() * innerWidth + 'px';
-    let bg = color[Math.floor(Math.random() * color.length)];
-    square.style.background = bg;
-    section.appendChild(square);
+   var size = Math.random() * 50;
+   square.style.width = 30 + size + 'px';
+   square.style.height = 30 + size + 'px';
+   square.style.top = Math.random() * innerHeight + 'px';
+   square.style.left = Math.random() * innerWidth + 'px';
+   let bg = color[Math.floor(Math.random() * color.length)];
+   square.style.background = bg;
+   section.appendChild(square);
 
-    setTimeout(() => {
+   setTimeout(() => {
       square.romove();
-    }, 5000)
+    }, 500)
   }
-  setInterval(square, 150);
+  setInterval(square, 100);
 
 </script>
+
 
 
 
